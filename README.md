@@ -1,24 +1,27 @@
-# README
+# Rails API only + React Boilerplate
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A simple boilerplate that includes versionned routes, controllers, and API constraints, [Active Model Serializers](https://github.com/rails-api/active_model_serializers), etc. on the server side, with a React boilerplate included in /client 
 
-Things you may want to cover:
+# Getting Started
+Navigate to the root directory and start your server with
 
-* Ruby version
+```
+bundle install
+rails s
+```
 
-* System dependencies
+After that, navigate to the /client directory and run
 
-* Configuration
+```
+npm install 
+npm start
+```
 
-* Database creation
+## Note
 
-* Database initialization
+ If the API constraints are used, you'll have to include Request Headers like so:
+ 
+`Accept: application/json;version=1`
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+TODO: token authentication
